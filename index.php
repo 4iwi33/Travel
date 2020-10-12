@@ -19,32 +19,27 @@
         <a class="btn btn-outline-primary" href="#">Войти</a>
     </div>
 
-    <div class="container-fluid row">
-<div class="d-flex flex-wrap">
 
-        <?php for ($i = 0; $i < 50; $i++) : ?>
-
-            <div class="col-md-4">
+    <div class="container mt-5">
+        <div class="d-flex flex-wrap">
+            <?php for ($i = 0; $i < 50; $i++) : ?>
                 <div class="card mb-4 shadow-sm">
-                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                    </svg>
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Штат</h4>
+                    </div>
                     <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Посетить</button>
-                            </div>
-                        </div>
+                        <img src="img/<?php echo ($i + 1) ?>.jpg" class="img-thumbnail">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Посетить</button>
                     </div>
                 </div>
-            </div>
-
-        <?php endfor; ?>
+            <?php endfor; ?>
+        </div>
     </div>
 
-    </div>
 
 </body>
 
