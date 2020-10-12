@@ -20,6 +20,7 @@
     </div>
 
     <div class="container-fluid row">
+<div class="d-flex flex-wrap">
 
         <?php for ($i = 0; $i < 50; $i++) : ?>
 
@@ -41,6 +42,8 @@
             </div>
 
         <?php endfor; ?>
+    </div>
+
     </div>
 
 </body>
