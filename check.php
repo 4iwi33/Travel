@@ -7,9 +7,9 @@ $error = '';
 if (trim($email) == '')
     $error = 'Введите email';
 elseif (trim($message) == '')
-    $error = 'Введите сообщение';
+    $error = 'Введите пароль';
 elseif (strlen($message) < 10)
-    $error = 'Сообщение должно быть более 10 символов';
+    $error = 'Пароль должен быть более 10 символов';
 
 if ($error != '') {
     echo $error;

@@ -23,8 +23,8 @@
         <h2>Пожалуйста войдите</h2>
         <form action="check.php" method="POST" class="form-signin ">
             <input type="email" name="email" placeholder="Введите Email" class="form-control"><br>
-            <textarea name="message" class="form-control" placeholder="Введите сообщение"></textarea><br>
-            <button type="submit" name="send" class="btn btn-success">Отправить</button>
+            <textarea name="message" class="form-control" placeholder="Введите пароль"></textarea><br>
+            <button type="submit" name="send" class="btn btn-success">Зарегистрировать</button>
         </form>
     </div>
 </body>

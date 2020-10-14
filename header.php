@@ -17,7 +17,15 @@
             <a class="p-2 text-dark" href="index.php">Главная</a>
             <a class="p-2 text-dark" href="registration.php">Регистрация</a>
         </nav>
-        <a class="btn btn-outline-primary" href="registration.php">Войти</a>
+
+        <?php if ($_COOKIE['user']  == 'true') : ?>
+            <a class="btn btn-danger" href="authentication.php">Выйти</a>
+
+        <?php else : ?>
+
+            <a class="btn btn-outline-primary" href="authentication.php">Войти</a>
+
+        <?php endif; ?>
     </div>
-    
+
 </body>
